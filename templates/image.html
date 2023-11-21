@@ -1,0 +1,17 @@
+<h3>This is the user inputed image</h3>
+
+<img src="{{ url_for('static', filename='original_img/original.jpg') }}" class="image" />
+
+<h3>This is the output image</h3>
+
+<img
+  src="{{ url_for('static', filename='inpainted_img/inpainted.jpg') }}" class="image"
+/>
+
+
+
+<style>
+  .image {
+    width: 400px;
+  }
+</style>
